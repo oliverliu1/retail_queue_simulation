@@ -9,6 +9,6 @@ class Cashier(object):
         self.countdown = 0
         self.busy = False
 
-    def process_transaction(self):
-        self.countdown = randint(mintime, maxtime)
+    def process_transaction(self, customer):
+        self.countdown = randint(self.mintime, self.maxtime) + (self.position // customer.speed)
         self.busy = True
