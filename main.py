@@ -1,12 +1,6 @@
 from cashier import Cashier
 from customer import Customer
-from overall_process import overall_process
+from overall_process import overall_process, check_if_busy
+from user_input import user_input, user_input_helper
 
-cash1 = Cashier(1, 45, 60)
-cust1 = Customer(3)
-cust2 = Customer(1)
-
-cashiers = [cash1]
-customers = [cust1, cust2]
-
-overall_process(cashiers, customers)
+overall_process(*user_input(*user_input_helper()))
