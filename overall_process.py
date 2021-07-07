@@ -15,8 +15,9 @@ def overall_process(cashier_instances, customer_queue):
 
         # Assigns a customer to any cashier that is not busy
         for cashier in [i for i in cashier_instances if i.busy == False]:
-            customer = customer_queue.pop()
-            cashier.process_transaction(customer)
+            if customer_queue != []:
+                customer = customer_queue.pop()
+                cashier.process_transaction(customer)
 
         # Decrements the countdown of every cashier
         for cashier in cashier_instances:
