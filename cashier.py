@@ -1,6 +1,6 @@
 from random import randint
 
-class Cashier(object):
+class Cashier:
 
     def __init__(self, position, mintime, maxtime):
         self.position = position
