@@ -1,5 +1,6 @@
 from random import randint
 
+
 class Cashier:
 
     def __init__(self, position, mintime, maxtime):
@@ -10,5 +11,5 @@ class Cashier:
         self.busy = False
 
     def process_transaction(self, customer):
-        self.countdown = randint(self.mintime, self.maxtime) + (self.position // customer.speed)
+        self.countdown = randint(self.mintime, self.maxtime) + (self.position // randint(customer.minspeed, customer.maxspeed))
         self.busy = True
