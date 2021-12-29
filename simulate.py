@@ -1,14 +1,6 @@
 from datetime import timedelta
 
 
-def check_if_busy(cashier_instances):
-    # Checks if any cashier is busy
-    for cashier in cashier_instances:
-        if cashier.busy:
-            return True
-    return False
-
-
 def run_simulation(cashier_instances, customer_queue):
 
     timer = 0
@@ -35,3 +27,11 @@ def run_simulation(cashier_instances, customer_queue):
         timer += 1
 
     print(f'It took {timedelta(seconds=timer)} for {len(cashier_instances)} cashier(s) to serve {number_of_customers} customer(s).')
+
+# Helpers
+
+def check_if_busy(cashier_instances):
+    for cashier in cashier_instances:
+        if cashier.busy:
+            return True
+    return False

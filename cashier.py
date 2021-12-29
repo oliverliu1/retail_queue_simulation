@@ -2,7 +2,6 @@ from random import randint
 
 
 class Cashier:
-
     def __init__(self, position, mintime, maxtime):
         self.position = position
         self.mintime = mintime
