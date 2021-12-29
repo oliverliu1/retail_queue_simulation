@@ -4,7 +4,7 @@ from datetime import timedelta
 def check_if_busy(cashier_instances):
     # Checks if any cashier is busy
     for cashier in cashier_instances:
-        if cashier.busy == True:
+        if cashier.busy:
             return True
     return False
 
