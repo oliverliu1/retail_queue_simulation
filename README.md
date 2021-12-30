@@ -1,10 +1,8 @@
 ﻿# Retail Queue Simulation
 
-## Introduction
-A simulation that models the amount of time it takes for x amount of cashiers to serve y amount of customers. The queue will be set up so there is 1 line leading up to multiple cashiers.
+## Overview
+A simulation that models the amount of time it takes for a certain amount of cashiers to serve a certain amount of customers in different queue systems. The single queue system has one line leading up to every cashier, and walking speed is accounted for. The multi queue system gives every cashier their own line, with minimal walking time spent.
 
 ## Technologies
 Project created with
-- Python version: 3.9.4
-- Python random module
-- Python datetime module
+- Python!
