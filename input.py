@@ -1,5 +1,4 @@
 def get_user_input():
-
     number_of_cashiers = input('Please enter the amount of cashiers you would like to model: ')
     while not number_of_cashiers.isnumeric():
         number_of_cashiers = input('Error, please enter an integer. Enter the amount of cashiers you would like to model: ')
